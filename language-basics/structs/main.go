@@ -45,8 +45,9 @@ func main() {
 		},
 	}
 
-	eshbanPointer := &eshban
-	eshbanPointer.updateName("eshbannn")
+	// eshbanPointer := &eshban
+	// eshbanPointer.updateName("eshbannn")
+	eshban.updateName("eshbannn") // Shortcut
 	eshban.print()
 
 }
