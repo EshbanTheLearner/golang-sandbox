@@ -45,13 +45,14 @@ func main() {
 		},
 	}
 
-	eshban.updateName("eshbannn")
+	eshbanPointer := &eshban
+	eshbanPointer.updateName("eshbannn")
 	eshban.print()
 
 }
 
-func (p person) updateName(newFirstName string) {
-	p.firstName = newFirstName
+func (pointerToPerson *person) updateName(newFirstName string) {
+	(*pointerToPerson).firstName = newFirstName
 }
 
 func (p person) print() {
